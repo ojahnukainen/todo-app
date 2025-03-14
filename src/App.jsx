@@ -10,7 +10,7 @@ const Cards = (props) =>{
    const cardData = props.content
   return(
     <div>
-      {cardData.map((item) => 
+      { cardData.length > 0 ? cardData.map((item) => 
         
         <Card key={item.id}
           id={item.id}
@@ -20,7 +20,7 @@ const Cards = (props) =>{
           handleDone={props.handleDone}
           handleImportantButton={props.handleImportantButton}
           whole={item.all}
-        />)}
+        />) :<h2>No things to do 🤩</h2>}
     </div>
   )
 }
@@ -69,7 +69,7 @@ function App() {
       content: newContent,
       important: newIsUrgent
     }
-    console.log("hello from addRTask")
+    
     axios
     .post(db_url, newCard)
     .then(response =>{
