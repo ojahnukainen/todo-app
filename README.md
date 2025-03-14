@@ -8,7 +8,7 @@ Next ToDo task is to actually make this look and feel good from the UX designer 
 I have not follwed any tutorial while working with this.
 
 ## Basics
-So this is just front done with React. Has been created with Vite. Todo tasks are saved in the local db.json file and is run with json-server. Basic light/dark theme has been included.
+So this is just front done with React. Has been created with Vite. Todo tasks are saved in the local db.json file and is run with json-server. Basic light/dark theme has been included. This application is usable also in tablet and phone sizes.
 
 ## To run the app
 To get everything up and running
